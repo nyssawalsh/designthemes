@@ -1,0 +1,551 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<style>
+			:root {
+				--container-width: 62.5rem;
+				--padding: .5rem;
+				
+				--main-color: #369;
+				--secondary-color: #552448;
+				
+				--bg-image: url(https://static.wixstatic.com/media/f61af8_f061173e2d744be3bfd29b56aee3e686.png/v1/fill/w_1960,h_2110,al_c,q_90,usm_0.66_1.00_0.01/f61af8_f061173e2d744be3bfd29b56aee3e686.png);
+			}
+			
+			html, body {
+				font-size: 100%;
+				
+				margin: 0;
+				padding: 0;
+				
+				box-sizing: border-box;
+			}
+			
+			*, :after, :before {
+				box-sizing: inherit
+			}
+			
+			body {
+				display: flex;
+				
+			}
+
+			.rn-site-builder-sidebar {
+				border-right: .25rem solid #000;
+				font-family: 'Helvetica';
+				
+				height: 100vh;
+				padding: .5rem;
+				width: 250px;
+				
+				overflow: scroll;
+			}
+			
+			.rn-site-builder-sidebar section {
+				border-bottom: 1px solid #000;
+				
+				margin-bottom: 1rem;
+				padding-bottom: 1rem;
+			}
+			
+			.rn-site-builder-sidebar h3 {
+				font-weight: 100;
+				text-align: center;
+				
+				margin-bottom: .25rem;
+				width: 100%;
+			}
+
+			.rn-site-builder-sidebar input,
+			.rn-site-builder-sidebar textarea,
+			.rn-site-builder-sidebar select {
+				margin-bottom: .5rem;
+				width: 100%;
+			}
+			
+			.rn-site-builder-sidebar textarea {
+				height: 100px;
+			}
+			
+			.rn-site-builder-bg-img-preview {
+				background-image: var(--bg-image);
+				background-position: 50% center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				
+				height: 150px;
+				margin-bottom: .5rem;
+				width: 100%;
+				
+				display: block;
+			}
+			
+			.rn-site-builder-sidebar ul {
+				list-style: none;
+				
+				margin: .5rem 0;
+				padding: 0;
+			}
+			
+			.rn-site-builder-sidebar li {
+				display: flex;
+				justify-content: space-between;
+				
+				margin-bottom: .25rem;
+			}
+			
+			.rn-site-builder-sidebar li a {
+				color: red;
+				text-decoration: none;
+			}
+			
+			.rn-site-builder-sidebar .sizing {
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			
+			.rn-site-builder-sidebar .sizing i {
+				font-size: 32px;
+				
+				margin: 0 .5rem;
+				
+				cursor: pointer;
+			}
+
+
+			#theme001 {
+				font-family: 'Roboto Condensed', sans-serif;
+				
+				height: 100vh;
+				
+				overflow: scroll;
+				
+				flex: 1 1 auto;
+			}
+			
+			#theme001 a {
+				transition: 150ms ease-in-out all;
+			}
+			
+			#theme001 a:hover {
+				color: var(--secondary-color);
+			}
+			
+			#theme001 header {
+				height: 6.75rem;
+				margin: 0 auto;
+				max-width: var(--container-width);
+				padding: var(--padding);
+				width: 100%;
+				
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				justify-content: space-between;
+			}
+			
+			#theme001 header h1 {
+				height: 100%;
+				margin: 0 var(--padding) 0 0;
+				width: 7.5rem;
+			}
+			
+			#theme001 header h1 img {
+				height: 100%;
+				width: 100%;
+			}
+			
+			#theme001 header h2 {
+				color: var(--main-color);
+				font-size: 1rem;
+				font-weight: 100;
+				text-align: center;
+				
+				margin: 0;
+				padding: 0 0 calc(var(--padding) / 2);
+				width: calc(100% - 8rem);
+			}
+			
+			#theme001 header h2 span {
+				font-size: 1.0625rem;
+				font-weight: 400;
+			}
+			
+			#theme001 nav {
+				width: calc(100% - 8rem);
+			}
+			
+			#theme001 nav ul {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				
+				list-style: none;
+				
+				align-items: center;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+			
+			#theme001 nav ul li {
+				flex: 1 1 auto;
+			}
+			
+			#theme001 nav ul li.last {
+				order: 2;
+			}
+			
+			#theme001 nav ul li a {
+				border-bottom: 1px solid var(--main-color);
+				color: var(--main-color);
+				font-size: .875rem;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				
+				padding: var(--padding);
+				width: 100%;
+				
+				display: block;
+			}
+			
+			#theme001 nav ul li a:hover {
+				background: var(--main-color);
+				color: #fff;
+			}
+			
+			#theme001 .container {
+				margin: 0 auto;
+				max-width: var(--container-width);
+				padding: var(--padding);
+				
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+			}
+			
+			#theme001 .home-page-photo {
+				background-image: var(--bg-image);
+				background-position: 50% center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				
+				height: 30rem;
+				width: 100%;
+			}
+			
+			#theme001 .home-page-photo .container {
+				height: 100%;
+			}
+			
+			#theme001 .quick-search-widget {
+				background: var(--main-color);
+				color: #fff;
+				
+				padding: calc(var(--padding) * 2);
+				width: 20rem;
+			}
+			
+			#theme001 .quick-search-widget h3 {
+				font-size: 1.5rem;
+				text-align: center;
+				text-transform: uppercase;
+				
+				margin: 0 0 var(--padding);
+			}
+			
+			#theme001 .quick-search-widget form {
+				padding: 0;
+				margin: 0;
+				
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+			}
+			
+			#theme001 .quick-search-widget input {
+				height: 2rem;
+				margin-bottom: calc(var(--padding) * 2);
+				width: 100%;
+			}
+			
+			#theme001 .quick-search-widget button {
+				background: transparent;
+				border: 2px solid #fff;
+				border-radius: 0;
+				color: #fff;
+				font-size: .875rem;
+				text-transform: uppercase;
+				
+				margin: 0;
+				padding: var(--padding) calc(var(--padding) * 2);
+			}
+			
+			#theme001 .text-area {
+				margin: 0 auto;
+				max-width: 50rem;
+				width: 100%;
+			}
+			
+			#theme001 .text-area a {
+				color: var(--main-color);
+			}
+			
+			#theme001 .callouts {
+				display: flex;
+			}
+			
+			#theme001 .callout {
+				border: .25rem solid var(--secondary-color);
+				color: var(--secondary-color);
+				text-align: center;
+				
+				margin: 0 .5rem;
+				
+				width: calc(100% / 3);
+				
+				cursor: pointer;
+				
+				transition: 150ms ease-in-out all;
+			}
+			
+			#theme001 .callout:first-of-type {margin-left: 0;}
+			#theme001 .callout:last-of-type {margin-right: 0;}
+			
+			#theme001 .callout:hover {
+				background: var(--secondary-color);
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="rn-site-builder-sidebar" id="siteBuilderSidebar">
+			<section>
+				<h3>Color</h3>
+				<input type="color" name="main-color" value="#336699">
+				<input type="color" name="secondary-color" value="#552448">
+			</section>
+			<section>
+				<h3>Background Image</h3>
+				<input type="file" name="bg-image" value="https://static.wixstatic.com/media/f61af8_f061173e2d744be3bfd29b56aee3e686.png/v1/fill/w_1960,h_2110,al_c,q_90,usm_0.66_1.00_0.01/f61af8_f061173e2d744be3bfd29b56aee3e686.png">
+				<img class="rn-site-builder-bg-img-preview">
+			</section>
+			<section>
+				<h3>Navigation</h3>
+				<input type="text" name="navigationText" placeholder="Link text">
+				<input type="url" name="navigationUrl" placeholder="Link url">
+				<input type="submit" value="Add Navigation Item" id="newNavButton">
+				<ul class="rn-site-builder-nav-preview"></ul>
+			</section>
+			<section>
+				<h3>Text</h3>
+				<textarea>Lorem ipsum dolor sit amet, et lorem magna ullamcorper, eu turpis, id turpis ornare. Aliquid consequat eleifend nunc amet. Urna tortor. Felis sit lorem, sagittis et elit pharetra adipiscing est. Arcu lacus nec vitae, odio libero leo torquent non pretium bibendum, mauris integer turpis eros hac in, luctus vitae nunc viverra, ut luctus in wisi. Porta leo augue condimentum leo pede. Nibh dapibus tempor, arcu amet phasellus dolor, etiam odio. Placerat faucibus, in pellentesque enim, dui lacus nec. Pulvinar sollicitudin non gravida, ut in urna fermentum pede mauris, egestas nulla id amet mi vestibulum. Ante quisque sociis est, integer ornare nibh turpis.</textarea>
+				<input type="submit" value="Update Text" id="textareaButton">
+			</section>
+			<section>
+				<h3>Callouts</h3>
+				<select name="callouts" multiple>
+					<option selected>Search for a home</option>
+					<option selected>Featured properties</option>
+					<option selected>Market report</option>
+					<option>What's your home worth</option>
+					<option>Market watch</option>
+					<option>Property watch</option>
+				</select>
+			</section>
+			
+			<section>
+				<h3>Viewport Preview</h3>
+				<div class="sizing">
+					<i class="fa fa-desktop"></i>
+					<i class="fa fa-mobile" style="font-size: 44px; color: #999"></i>
+				</div>
+			</section>
+			
+			<a href="#">Save</a>
+		</div>
+		
+		<div id="theme002">
+		</div>
+		
+		<div id="theme001">
+			<header>
+				<h1>
+					<a href="#"><img src="http://www.bhhsnortheastrealestate.com/themes/main/images/bhhs/bhhs-logo.png" alt="Company Name"></a>
+				</h1>
+				
+				<h2><span>Astonishingly Verbose Office Name of Too Long City Name</span> // Franklin McCallister</h2>
+				
+				<nav>
+					<ul></ul>
+				</nav>
+			</header>
+			
+			<section class="home-page-photo">
+				<div class="container">
+					<div class="quick-search-widget">
+						<h3>Quick Search</h3>
+						<form>
+							<input type="text">
+							<button>Search</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			
+			<section>
+				<div class="container">
+					<div class="text-area"></div>
+					
+					<div class="callouts">
+						<article class="callout">
+							<h2>Search</h2>
+							<h4>for a home</h4>
+						</article>
+						<article class="callout">
+							<h2>Featured</h2>
+							<h4>properties</h4>
+						</article>
+						<article class="callout">
+							<h2>Market</h2>
+							<h4>report</h4>	
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<script>
+			const sidebar = document.getElementById('siteBuilderSidebar');
+			const theme = document.getElementById('theme001');
+			const colors = Array.from(sidebar.querySelectorAll('input[type="color"]'));
+			const bgImgs = Array.from(sidebar.querySelectorAll('input[type="file"]'));
+			const newNavButton = document.getElementById('newNavButton');
+			const newNavText = document.querySelector('input[name="navigationText"]');
+			const newNavUrl = document.querySelector('input[name="navigationUrl"]');
+			const textareaInput = document.querySelector('textarea');
+			const textarea = document.querySelector('.text-area');
+			const textareaButton = document.getElementById('textareaButton');
+			let previewNavLinkXs = [];
+			
+			const themeNav = theme.querySelector('nav ul');
+			const previewNav = sidebar.querySelector('.rn-site-builder-nav-preview');
+			let navLinks = [
+				{ 'text': 'Home', 'url': '#' },
+				{ 'text': 'Search', 'url': '#' },
+				{ 'text': 'Community', 'url': '#' },
+				{ 'text': 'Contact', 'url': '#' },
+			];
+			
+			function handleUpdate() {
+				const suffix = this.dataset.sizing || '';
+				document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+			}
+			
+			function bgImgHandleUpdate() {
+				const name = this.name;
+				const reader = new FileReader();
+				reader.onload = function () {
+					document.documentElement.style.setProperty(`--${name}`, `url(${reader.result})`);
+				}
+				reader.readAsDataURL(this.files[0]);
+			}
+			
+			function pouplatePreviewNav(navLink) {
+				const li = document.createElement('li');
+				const text = document.createTextNode(navLink.text);
+				const a = document.createElement('a');
+				const x = document.createTextNode('X');
+				a.appendChild(x);
+				a.setAttribute('href', '#');
+				li.appendChild(text);
+				li.appendChild(a);
+				li.setAttribute('title', navLink.url);
+				previewNav.appendChild(li);
+				previewNavLinkXs.push(a);
+			}
+			
+			function populateNav(navLink) {
+				const li = document.createElement('li');
+				const a = document.createElement('a');
+				a.setAttribute('href', navLink.url);
+				const text = document.createTextNode(navLink.text);
+				if (navLink.text === ' Dashboard') {
+					const i = document.createElement('i');
+					i.setAttribute('class', 'fa fa-user');
+					a.appendChild(i);
+					li.setAttribute('class', 'last');
+				}
+				a.appendChild(text);
+				li.appendChild(a);
+				themeNav.appendChild(li);
+			}
+			
+			function findLinkObject(value) {
+				for (var i=0; i<navLinks.length; i++) {
+					if (navLinks[i]['text'].includes(value)) {
+						return i;
+					}
+				}
+				return null;
+			}
+			
+			function repopulateNavs() {
+				previewNavLinkXs = [];
+				navLinks.forEach(function (navLink) {
+					populateNav(navLink);
+					pouplatePreviewNav(navLink);
+				});
+				populateNav({'text': ' Dashboard', 'url': '#'});
+			}
+			
+			function addNavLink(text, url) {
+				if (newNavText.value === '' || newNavUrl.value === '') {return}
+				const newNav = {'text': newNavText.value, 'url': newNavUrl.value}
+				navLinks.push(newNav);
+				populateNav(newNav);
+				pouplatePreviewNav(newNav);
+				newNavText.value = '';
+				newNavUrl.value = '';
+				console.log(newNav);
+			}
+			
+			function populateTextArea() {
+				const p = document.createElement('p');
+				const content = document.createTextNode(textareaInput.value);
+				p.appendChild(content);
+				if (textarea.hasChildNodes()) {
+					textarea.removeChild(textarea.lastChild);
+				}
+				textarea.appendChild(p);
+			}
+			
+			repopulateNavs();
+			populateTextArea();
+			colors.forEach(color => color.addEventListener('change', handleUpdate));
+			bgImgs.forEach(bgImg => bgImg.addEventListener('change', bgImgHandleUpdate));
+			newNavButton.addEventListener('click', addNavLink);
+			textareaButton.addEventListener('click', populateTextArea);
+			previewNavLinkXs.forEach(function(navLinkX) {
+				navLinkX.addEventListener('click', function(e) {
+					e.preventDefault();
+					const name = navLinkX.parentElement.textContent.slice(0, -1);
+					navLinks.splice(findLinkObject(name), 1);
+					while (themeNav.hasChildNodes()) {
+						themeNav.removeChild(themeNav.lastChild);
+					}
+					while (previewNav.hasChildNodes()) {
+						previewNav.removeChild(previewNav.lastChild);
+					}
+					setTimeout(repopulateNavs, 50);
+				});
+			});
+		</script>
+	</body>
+</html>

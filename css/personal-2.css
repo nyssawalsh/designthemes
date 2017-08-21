@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700");
+:root {
+  --main-color: #04af99;
+  --secondary-color: #f78f1e;
+  --tertiary-color: #005aa2;
+  --hero: url(img/team/hero1.jpg);
+  --sub-hero: url(img/team/hero2.jpg);
+  --agent: url(img/team/hero2.jpg); }
+
+#personal2 {
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  #personal2 a, #personal2 h1, #personal2 h2, #personal2 h3, #personal2 h4, #personal2 h5, #personal2 h6 {
+    color: var(--main-color); }
+  #personal2 .site-container {
+    margin: 0 auto;
+    max-width: 1200px; }
+  #personal2 .no-bullet {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
+  #personal2 .site-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    #personal2 .site-row.align-middle {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-row {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  #personal2 .site-column {
+    padding: 0 8px; }
+    #personal2 .site-column.two-thirds {
+      width: 66%; }
+    #personal2 .site-column.half {
+      width: 50%; }
+    #personal2 .site-column.third {
+      width: 33%; }
+    #personal2 .site-column.quarter {
+      width: 25%; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-column.two-thirds, #personal2 .site-column.half, #personal2 .site-column.third, #personal2 .site-column.quarter {
+        width: 100%; } }
+  #personal2 .site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-header {
+        height: 40px;
+        position: relative; }
+        #personal2 .site-header .site-logo-nav, #personal2 .site-header .site-logo, #personal2 .site-header .site-logo img {
+          height: 100%; } }
+  #personal2 .site-logo {
+    width: 25%; }
+    #personal2 .site-logo a {
+      color: #fff;
+      font-family: "Dancing Script", cursive;
+      font-size: 48px;
+      line-height: 0.8;
+      text-align: center;
+      text-decoration: none;
+      display: block; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-logo {
+        width: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        #personal2 .site-logo a {
+          color: #000;
+          font-size: 20px;
+          text-shadow: none; } }
+  #personal2 .site-logo-nav {
+    height: 100px;
+    padding: 0 8px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-logo-nav {
+        position: relative; } }
+    #personal2 .site-logo-nav nav, #personal2 .site-logo-nav nav ul, #personal2 .site-logo-nav nav ul li, #personal2 .site-logo-nav nav ul li a {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    #personal2 .site-logo-nav nav ul li {
+      font-size: 14px;
+      border-right: 1px solid #fff;
+      padding: 0 16px; }
+      #personal2 .site-logo-nav nav ul li:last-of-type {
+        border-right: none; }
+      #personal2 .site-logo-nav nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-logo-nav nav ul {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        right: 0; }
+        #personal2 .site-logo-nav nav ul li {
+          background: #fff;
+          border-bottom: 1px solid #4f4f4f; }
+          #personal2 .site-logo-nav nav ul li:last-of-type {
+            border-bottom: none; } }
+    #personal2 .site-logo-nav nav .site-header-nav-login {
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid #fff;
+      padding: 8px 16px;
+      transition: all 300ms ease; }
+      #personal2 .site-logo-nav nav .site-header-nav-login:hover {
+        background: var(--main-color); }
+      @media only screen and (max-width: 768px) {
+        #personal2 .site-logo-nav nav .site-header-nav-login {
+          color: #000; } }
+    #personal2 .site-logo-nav nav .site-header-nav-button {
+      text-decoration: none;
+      padding: 0 8px;
+      cursor: pointer;
+      display: none; }
+      @media only screen and (max-width: 769px) {
+        #personal2 .site-logo-nav nav .site-header-nav-button {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+      #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger {
+        position: relative;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none; }
+        #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger, #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::before, #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::after {
+          display: block;
+          width: 28px;
+          height: 3px;
+          background-color: #4f4f4f;
+          transition-property: background-color, -webkit-transform;
+          transition-property: background-color, transform;
+          transition-duration: 0.3s; }
+        #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::before, #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::after {
+          position: absolute;
+          content: ""; }
+        #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::before {
+          top: -8px; }
+        #personal2 .site-logo-nav nav .site-header-nav-button .site-header-nav-burger::after {
+          top: 8px; }
+      #personal2 .site-logo-nav nav .site-header-nav-button.is-active .site-header-nav-burger {
+        background-color: transparent; }
+      #personal2 .site-logo-nav nav .site-header-nav-button.is-active .site-header-nav-burger::before {
+        -webkit-transform: translateY(8px) rotate(45deg);
+                transform: translateY(8px) rotate(45deg); }
+      #personal2 .site-logo-nav nav .site-header-nav-button.is-active .site-header-nav-burger::after {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-8px) rotate(-45deg); }
+  #personal2 .site-home-page-hero {
+    background-image: var(--hero);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-home-page-hero {
+        height: calc(100vh - 40px); } }
+  #personal2 .site-home-page-hero-content {
+    width: 100%;
+    position: absolute;
+    top: 50%; }
+    #personal2 .site-home-page-hero-content h1, #personal2 .site-home-page-hero-content h2, #personal2 .site-home-page-hero-content h3 {
+      color: #fff;
+      margin: 0; }
+    #personal2 .site-home-page-hero-content h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 100px;
+      font-weight: normal; }
+    #personal2 .site-home-page-hero-content h2, #personal2 .site-home-page-hero-content h3 {
+      font-weight: 100;
+      line-height: 1.1; }
+    #personal2 .site-home-page-hero-content h2 {
+      font-size: 50px; }
+    #personal2 .site-home-page-hero-content h3 {
+      font-size: 32px; }
+    #personal2 .site-home-page-hero-content .site-home-quick-search {
+      padding: 16px 0; }
+      #personal2 .site-home-page-hero-content .site-home-quick-search form {
+        margin: 0;
+        width: 40%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end; }
+        #personal2 .site-home-page-hero-content .site-home-quick-search form input {
+          text-transform: uppercase; }
+          #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="text"] {
+            font-family: "Open Sans", sans-serif;
+            font-size: 12px;
+            border-top: 1px solid #bcbbbb;
+            border-right: none;
+            border-bottom: 1px solid #bcbbbb;
+            border-left: 1px solid #bcbbbb;
+            padding: 16px;
+            width: 80%; }
+          #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
+            color: #4f4f4f;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: right;
+            background: #fff;
+            border-top: 1px solid #bcbbbb;
+            border-right: 1px solid #bcbbbb;
+            border-bottom: 1px solid #bcbbbb;
+            border-left: none;
+            padding: 0 16px;
+            width: 20%; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-home-page-hero-content {
+        padding: 8px;
+        width: auto;
+        top: auto;
+        bottom: 0; }
+        #personal2 .site-home-page-hero-content h1 {
+          font-size: 40px;
+          line-height: 1; }
+        #personal2 .site-home-page-hero-content h2, #personal2 .site-home-page-hero-content h3 {
+          font-size: 32px; }
+        #personal2 .site-home-page-hero-content .site-home-quick-search {
+          padding: 16px 0 0; }
+          #personal2 .site-home-page-hero-content .site-home-quick-search form {
+            width: 100%; }
+            #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="text"] {
+              width: 75%; }
+            #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
+              width: 25%; } }
+  #personal2 .site-home-page-content {
+    color: #bcbbbb;
+    padding: 32px 8px; }
+    #personal2 .site-home-page-content p {
+      font-size: 28px;
+      line-height: 1.8; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-home-page-content {
+        padding: 8px; } }
+  #personal2 .site-callouts {
+    background: #bcbbbb;
+    padding: 64px 0; }
+    #personal2 .site-callouts a {
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      transition: all 300ms ease; }
+      #personal2 .site-callouts a h2,
+      #personal2 .site-callouts a h3 {
+        color: #fff;
+        font-weight: normal;
+        margin: 0; }
+      #personal2 .site-callouts a h2 {
+        font-size: 28px;
+        text-transform: uppercase;
+        padding-top: 8px; }
+      #personal2 .site-callouts a h3 {
+        font-size: 18px; }
+      #personal2 .site-callouts a .fa-home {
+        font-size: 200px;
+        background: var(--main-color);
+        border-radius: 100%;
+        height: 250px;
+        width: 250px;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+      #personal2 .site-callouts a .fa-angle-double-right {
+        font-size: 32px;
+        padding: 8px; }
+      #personal2 .site-callouts a:hover {
+        opacity: 0.6; }
+  #personal2 .site-home-page-testimonial {
+    color: var(--main-color);
+    padding: 100px 32px; }
+  #personal2 .site-home-page-testimonial-content {
+    position: relative; }
+    #personal2 .site-home-page-testimonial-content:before, #personal2 .site-home-page-testimonial-content:after {
+      color: #bcbbbb;
+      content: "''";
+      font-size: 80px;
+      position: absolute; }
+    #personal2 .site-home-page-testimonial-content:before {
+      top: -14px;
+      left: -34px; }
+    #personal2 .site-home-page-testimonial-content:after {
+      bottom: -9px;
+      right: -25px; }
+    #personal2 .site-home-page-testimonial-content p {
+      font-size: 24px;
+      font-style: italic;
+      line-height: 1.8;
+      margin: 0; }
+    #personal2 .site-home-page-testimonial-content span {
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 100;
+      text-align: right;
+      padding-right: 48px;
+      display: block; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-home-page-testimonial-content p, #personal2 .site-home-page-testimonial-content span {
+        font-size: 14px; } }
+  #personal2 .site-featured-listings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #personal2 .site-featured-listings a {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: lighter;
+      text-decoration: none;
+      background-image: url(../img/team/featured-listing.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 300px;
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 33%;
+              flex: 1 1 33%;
+      transition: all 300ms ease; }
+      #personal2 .site-featured-listings a:hover {
+        opacity: 0.7; }
+      #personal2 .site-featured-listings a ul {
+        padding: 16px; }
+        #personal2 .site-featured-listings a ul li.address {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 8px; }
+        #personal2 .site-featured-listings a ul li.price {
+          font-size: 28px;
+          font-weight: 400;
+          padding: 8px 0; }
+        #personal2 .site-featured-listings a ul li.details span {
+          border-right: 1px solid #fff;
+          padding: 0 16px; }
+          #personal2 .site-featured-listings a ul li.details span:first-of-type {
+            padding-left: 0; }
+          #personal2 .site-featured-listings a ul li.details span:last-of-type {
+            border-right: none;
+            padding-right: 0; }
+  #personal2 .site-footer {
+    color: #fff;
+    font-size: 14px;
+    background: var(--main-color);
+    padding: 32px 0; }
+    #personal2 .site-footer p {
+      margin: 0; }
+    #personal2 .site-footer .site-footer-name {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    #personal2 .site-footer .footer-address {
+      margin: 16px 0; }
+    #personal2 .site-footer h2 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 100;
+      text-transform: uppercase; }
+    #personal2 .site-footer .footer-social {
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      #personal2 .site-footer .footer-social li {
+        padding: 0 8px; }
+    #personal2 .site-footer form {
+      font-size: 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #personal2 .site-footer form input,
+      #personal2 .site-footer form textarea {
+        font-family: "Open Sans", sans-serif;
+        border: none;
+        border-radius: 4px;
+        padding: 12px;
+        -webkit-appearance: none; }
+      #personal2 .site-footer form input[type="text"] {
+        margin-right: 8px; }
+      #personal2 .site-footer form input[type="text"], #personal2 .site-footer form input[type="email"] {
+        margin-bottom: 8px;
+        width: 49%; }
+      #personal2 .site-footer form input[type="submit"] {
+        color: #fff;
+        font-family: "Source Serif Pro", serif;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 0;
+        margin: 8px 0;
+        padding: 10px;
+        -webkit-appearance: none;
+        transition: all 300ms ease; }
+        #personal2 .site-footer form input[type="submit"]:hover {
+          color: var(--main-color);
+          background: #fff; }
+      #personal2 .site-footer form textarea {
+        width: 100%; }
+    #personal2 .site-footer .site-footer-links {
+      font-family: "Open Sans", sans-serif;
+      padding: 32px 9;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #personal2 .site-footer .site-footer-links li {
+        font-size: 12px;
+        border-bottom: 1px solid #fff;
+        margin-right: 8px;
+        margin-bottom: 16px;
+        -webkit-box-flex: 25%;
+            -ms-flex: 25%;
+                flex: 25%;
+        transition: all 300ms ease; }
+        #personal2 .site-footer .site-footer-links li:hover a {
+          opacity: 0.6; }
+        #personal2 .site-footer .site-footer-links li a {
+          color: #fff;
+          text-decoration: none;
+          transition: all 300ms ease; }
+    #personal2 .site-footer .site-footer-disclaimer {
+      font-family: "Open Sans", sans-serif;
+      font-size: 10px; }
+    #personal2 .site-footer .site-footer-branding {
+      padding: 32px 8px 0;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      #personal2 .site-footer .site-footer-branding .site-agent-access-link {
+        color: #fff;
+        font-family: "Open Sans", sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #fff;
+        padding: 16px 32px;
+        transition: all 300ms ease; }
+        #personal2 .site-footer .site-footer-branding .site-agent-access-link:hover {
+          color: var(--main-color);
+          background: #fff; }
+    @media only screen and (max-width: 768px) {
+      #personal2 .site-footer h2 {
+        text-align: center; }
+      #personal2 .site-footer .site-logo img {
+        margin: 0 auto;
+        display: block; }
+      #personal2 .site-footer form input[type="text"] {
+        margin-right: 0; }
+      #personal2 .site-footer form input[type="text"], #personal2 .site-footer form input[type="email"] {
+        width: 100%; }
+      #personal2 .site-footer .site-footer-links li {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%; }
+      #personal2 .site-footer .site-footer-branding {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        #personal2 .site-footer .site-footer-branding a {
+          margin: 0 8px; } }
