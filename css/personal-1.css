@@ -16,7 +16,7 @@
     color: var(--main-color); }
   #personal1 .site-container {
     margin: 0 auto;
-    max-width: 1200px; }
+    max-width: 75rem; }
   #personal1 .no-bullet {
     list-style-type: none;
     margin: 0;
@@ -32,7 +32,7 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-row {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
@@ -46,7 +46,7 @@
       width: 33%; }
     #personal1 .site-column.quarter {
       width: 25%; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-column.two-thirds, #personal1 .site-column.half, #personal1 .site-column.third, #personal1 .site-column.quarter {
         width: 100%; } }
   #personal1 .site-header {
@@ -56,42 +56,41 @@
     left: 0;
     right: 0;
     z-index: 1; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-header {
-        height: 40px;
+        background: #000;
+        height: 2.5rem;
         position: relative; }
         #personal1 .site-header .site-logo-nav, #personal1 .site-header .site-logo, #personal1 .site-header .site-logo img {
           height: 100%; } }
   #personal1 .site-logo {
-    width: 25%; }
+    width: 25%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #personal1 .site-logo img {
+      padding-right: 8px; }
     #personal1 .site-logo a {
       color: #fff;
-      font-size: 48px;
+      font-size: 20px;
       line-height: 0.8;
       text-align: center;
       text-decoration: none;
       text-shadow: 0 0 16px #000;
       text-transform: uppercase;
       display: block; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-logo {
-        width: auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
+        width: auto; }
         #personal1 .site-logo a {
-          color: #000;
-          font-size: 20px;
+          color: #fff;
+          font-size: 1.25rem;
           text-shadow: none; } }
   #personal1 .site-logo-nav {
-    height: 100px;
+    height: 6.25rem;
     padding: 0 8px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -102,51 +101,37 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-logo-nav {
         position: relative; } }
-    #personal1 .site-logo-nav nav, #personal1 .site-logo-nav nav ul, #personal1 .site-logo-nav nav ul li, #personal1 .site-logo-nav nav ul li a {
-      height: 100%;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
     #personal1 .site-logo-nav nav ul {
-      margin-right: 16px; }
-      #personal1 .site-logo-nav nav ul li {
-        font-size: 14px;
-        padding: 0 16px; }
-        #personal1 .site-logo-nav nav ul li a {
-          color: #fff;
-          font-family: "Open Sans", sans-serif;
-          text-decoration: none;
-          text-transform: uppercase; }
-      @media only screen and (max-width: 768px) {
-        #personal1 .site-logo-nav nav ul {
-          display: none;
-          width: 100%;
-          position: absolute;
-          top: 40px;
-          right: 0; }
-          #personal1 .site-logo-nav nav ul li {
-            background: #fff;
-            border-bottom: 1px solid #4f4f4f; }
-            #personal1 .site-logo-nav nav ul li:last-of-type {
-              border-bottom: none; } }
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      #personal1 .site-logo-nav nav ul li a {
+        font-family: "Open Sans", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase; }
     #personal1 .site-logo-nav nav .site-header-nav-login {
       color: #fff;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: bold;
       font-family: "Open Sans", sans-serif;
       text-decoration: none;
       text-transform: uppercase;
       border-left: 1px solid #fff;
       padding-left: 32px; }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (min-width: 48.0625em) {
+        #personal1 .site-logo-nav nav .site-header-nav-login i {
+          display: none; } }
+      @media only screen and (max-width: 48em) {
         #personal1 .site-logo-nav nav .site-header-nav-login {
-          color: #000; } }
+          border-left: none;
+          padding-left: 0; }
+          #personal1 .site-logo-nav nav .site-header-nav-login span {
+            display: none; }
+          #personal1 .site-logo-nav nav .site-header-nav-login i {
+            font-size: 1.5rem; } }
     #personal1 .site-logo-nav nav .site-header-nav-button {
       text-decoration: none;
       padding: 0 8px;
@@ -172,7 +157,7 @@
           display: block;
           width: 28px;
           height: 3px;
-          background-color: #4f4f4f;
+          background-color: #fff;
           transition-property: background-color, -webkit-transform;
           transition-property: background-color, transform;
           transition-duration: 0.3s; }
@@ -191,33 +176,162 @@
       #personal1 .site-logo-nav nav .site-header-nav-button.is-active .site-header-nav-burger::after {
         -webkit-transform: translateY(-8px) rotate(-45deg);
                 transform: translateY(-8px) rotate(-45deg); }
+    @media only screen and (min-width: 48.0625em) {
+      #personal1 .site-logo-nav nav {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #personal1 .site-logo-nav nav > ul {
+          margin-right: 16px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          #personal1 .site-logo-nav nav > ul > li {
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            #personal1 .site-logo-nav nav > ul > li > a {
+              color: #fff;
+              position: relative;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              transition: all 300ms ease; }
+            #personal1 .site-logo-nav nav > ul > li:not(.has-dropdown):hover a {
+              opacity: 0.7; }
+        #personal1 .site-logo-nav nav ul li {
+          font-size: 0.875rem;
+          padding: 16px 16px; }
+        #personal1 .site-logo-nav nav ul .has-dropdown {
+          position: relative; }
+          #personal1 .site-logo-nav nav ul .has-dropdown:after {
+            color: #fff;
+            content: '\f107';
+            font-family: FontAwesome;
+            position: absolute;
+            top: rem-clac(15);
+            right: 0;
+            transition: all 300ms ease; }
+          #personal1 .site-logo-nav nav ul .has-dropdown:hover .dropdown {
+            display: block; }
+          #personal1 .site-logo-nav nav ul .has-dropdown:hover:after {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+        #personal1 .site-logo-nav nav ul .dropdown {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+          position: absolute;
+          top: 2.25rem;
+          display: none; }
+          #personal1 .site-logo-nav nav ul .dropdown li {
+            background: #fff;
+            padding: 0;
+            transition: all 300ms ease; }
+            #personal1 .site-logo-nav nav ul .dropdown li a {
+              color: #000;
+              padding: 8px;
+              display: block; }
+            #personal1 .site-logo-nav nav ul .dropdown li:hover {
+              background: #504f4f; }
+              #personal1 .site-logo-nav nav ul .dropdown li:hover a {
+                color: #fff; } }
+    @media only screen and (max-width: 48em) {
+      #personal1 .site-logo-nav nav {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #personal1 .site-logo-nav nav > ul {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 2.5rem;
+          right: 0; }
+          #personal1 .site-logo-nav nav > ul li {
+            background: #fff;
+            border-bottom: 1px solid #504f4f; }
+            #personal1 .site-logo-nav nav > ul li:last-of-type {
+              border-bottom: none; }
+            #personal1 .site-logo-nav nav > ul li a {
+              color: #504f4f;
+              text-decoration: none;
+              padding: 8px;
+              display: block; }
+        #personal1 .site-logo-nav nav ul .has-dropdown {
+          position: relative;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          #personal1 .site-logo-nav nav ul .has-dropdown a {
+            width: 100%; }
+          #personal1 .site-logo-nav nav ul .has-dropdown:after {
+            content: '\f107';
+            font-family: FontAwesome;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            transition: all 300ms ease; }
+          #personal1 .site-logo-nav nav ul .has-dropdown.open:after {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+        #personal1 .site-logo-nav nav ul .dropdown {
+          position: inherit;
+          top: 0;
+          display: none; }
+          #personal1 .site-logo-nav nav ul .dropdown li {
+            background: #504f4f;
+            border-color: #fff; }
+            #personal1 .site-logo-nav nav ul .dropdown li a {
+              color: #fff; } }
   #personal1 .site-home-page-hero {
     background-blend-mode: luminosity;
     background-color: #000;
     background-image: var(--hero);
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-home-page-hero {
-        height: calc(100vh - 40px); } }
+        background-position: left;
+        height: calc(100vh - 2.5rem); } }
   #personal1 .site-home-page-hero-content {
     text-align: right;
     width: 100%;
     position: absolute;
     top: 50%; }
+    #personal1 .site-home-page-hero-content .site-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
     #personal1 .site-home-page-hero-content h1, #personal1 .site-home-page-hero-content h2, #personal1 .site-home-page-hero-content h3 {
       color: #fff;
       margin: 0; }
     #personal1 .site-home-page-hero-content h1 {
-      font-size: 100px;
+      font-size: 5rem;
       font-weight: normal;
-      line-height: 0.7;
+      line-height: 0.9;
       text-transform: uppercase; }
     #personal1 .site-home-page-hero-content h2, #personal1 .site-home-page-hero-content h3 {
-      font-size: 50px;
+      font-size: 2.5rem;
       font-weight: normal;
       line-height: 1; }
     #personal1 .site-home-page-hero-content h3 {
@@ -243,16 +357,18 @@
           text-transform: uppercase; }
           #personal1 .site-home-page-hero-content .site-home-quick-search form input[type="text"] {
             font-family: "Open Sans", sans-serif;
-            font-size: 12px;
+            font-size: 0.75rem;
             border-top: 1px solid #bcbbbb;
             border-right: none;
             border-bottom: 1px solid #bcbbbb;
             border-left: 1px solid #bcbbbb;
             padding: 16px;
-            width: 80%; }
+            -webkit-box-flex: 80%;
+                -ms-flex: 80%;
+                    flex: 80%; }
           #personal1 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
             font-family: "Source Serif Pro", serif;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             text-align: right;
             background: #fff;
@@ -261,18 +377,27 @@
             border-bottom: 1px solid #bcbbbb;
             border-left: none;
             padding: 0 16px;
-            width: 20%; }
-    @media only screen and (max-width: 768px) {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+            cursor: pointer;
+            transition: all 300ms ease; }
+            #personal1 .site-home-page-hero-content .site-home-quick-search form input[type="submit"]:hover {
+              color: #fff;
+              background: #000; }
+    @media only screen and (max-width: 48em) {
       #personal1 .site-home-page-hero-content {
         padding: 8px;
         width: auto;
         top: auto;
+        left: 0;
+        right: 0;
         bottom: 0; }
         #personal1 .site-home-page-hero-content h1 {
-          font-size: 40px;
+          font-size: 2.5rem;
           line-height: 1; }
         #personal1 .site-home-page-hero-content h2, #personal1 .site-home-page-hero-content h3 {
-          font-size: 32px; }
+          font-size: 16px; }
         #personal1 .site-home-page-hero-content .site-home-quick-search {
           padding: 16px 0 0; }
           #personal1 .site-home-page-hero-content .site-home-quick-search form {
@@ -281,21 +406,23 @@
               width: 75%; }
             #personal1 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
               width: 25%; } }
+  #personal1 .site-home-page-hero-content-container {
+    width: 75%; }
+    @media only screen and (max-width: 48em) {
+      #personal1 .site-home-page-hero-content-container {
+        width: 100%; } }
   #personal1 .site-home-page-content {
     color: #fff;
     background: #bcbbbb;
     padding: 32px 8px; }
     #personal1 .site-home-page-content p {
-      font-size: 18px;
-      line-height: 1.8; }
-    #personal1 .site-home-page-content .primary-content p {
-      font-size: 28px;
+      font-size: 1.75rem;
       font-weight: bold; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-home-page-content .primary-content p {
         font-size: 18px; }
       #personal1 .site-home-page-content .secondary-content p {
-        font-size: 14px; } }
+        font-size: 0.875rem; } }
     #personal1 .site-home-page-content .site-button {
       color: #fff;
       font-weight: 700;
@@ -309,49 +436,61 @@
       transition: all 300ms ease; }
       #personal1 .site-home-page-content .site-button:hover {
         background: var(--secondary-color); }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-home-page-content {
         padding: 8px; } }
-  #personal1 .site-featured-listings a {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-weight: lighter;
-    text-decoration: none;
-    background-blend-mode: luminosity;
-    background-color: #000;
-    background-image: url(../img/team/featured-listing.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    width: 100%;
-    display: block; }
-    #personal1 .site-featured-listings a .site-container {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      #personal1 .site-featured-listings a .site-container ul {
-        background: rgba(0, 0, 0, 0.6);
-        padding: 16px 32px 32px 16px; }
-        #personal1 .site-featured-listings a .site-container ul li.address {
-          border-bottom: 1px solid #fff;
-          padding-bottom: 8px; }
-        #personal1 .site-featured-listings a .site-container ul li.price {
-          font-size: 28px;
-          font-weight: 400;
-          padding: 8px 0; }
-        #personal1 .site-featured-listings a .site-container ul li.details span {
-          border-right: 1px solid #fff;
-          padding: 0 16px; }
-          #personal1 .site-featured-listings a .site-container ul li.details span:first-of-type {
-            padding-left: 0; }
-          #personal1 .site-featured-listings a .site-container ul li.details span:last-of-type {
-            border-right: none;
-            padding-right: 0; }
+  #personal1 .site-featured-listings {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    #personal1 .site-featured-listings a {
+      color: #fff;
+      font-family: "Open Sans", sans-serif;
+      font-weight: lighter;
+      text-decoration: none;
+      background-blend-mode: luminosity;
+      background-color: #000;
+      background-image: url(../img/persona1/featured-listing.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 600px;
+      width: 100%;
+      display: block;
+      -webkit-box-flex: 50%;
+          -ms-flex: 50%;
+              flex: 50%;
+      transition: all 300ms ease; }
+      #personal1 .site-featured-listings a:hover {
+        background-color: transparent; }
+      #personal1 .site-featured-listings a .site-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #personal1 .site-featured-listings a .site-container ul {
+          background: rgba(0, 0, 0, 0.6);
+          padding: 16px 32px 32px 16px; }
+          #personal1 .site-featured-listings a .site-container ul li.address {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 8px; }
+          #personal1 .site-featured-listings a .site-container ul li.price {
+            font-size: 1.75rem;
+            font-weight: 400;
+            padding: 8px 0; }
+          #personal1 .site-featured-listings a .site-container ul li.details span {
+            border-right: 1px solid #fff;
+            padding: 0 16px; }
+            #personal1 .site-featured-listings a .site-container ul li.details span:first-of-type {
+              padding-left: 0; }
+            #personal1 .site-featured-listings a .site-container ul li.details span:last-of-type {
+              border-right: none;
+              padding-right: 0; }
   #personal1 .site-home-page-testimonial {
     color: #fff;
-    background: #4f4f4f;
-    padding: 100px 32px; }
+    background: #504f4f;
+    padding: 6.25rem 32px; }
   #personal1 .site-home-page-testimonial-content {
     position: relative; }
     #personal1 .site-home-page-testimonial-content:before, #personal1 .site-home-page-testimonial-content:after {
@@ -378,11 +517,14 @@
       text-align: right;
       padding-right: 48px;
       display: block; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-home-page-testimonial-content p, #personal1 .site-home-page-testimonial-content span {
-        font-size: 14px; } }
+        font-size: 0.875rem; } }
   #personal1 .site-callouts {
-    padding: 100px 0; }
+    background-image: var(--sub-hero);
+    background-position: center bottom;
+    background-size: cover;
+    padding: 6.25rem 0; }
     #personal1 .site-callouts a {
       color: #000;
       text-align: center;
@@ -394,19 +536,19 @@
         font-weight: normal;
         margin: 0; }
       #personal1 .site-callouts a h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
         text-transform: uppercase; }
       #personal1 .site-callouts a h3 {
         font-size: 18px; }
       #personal1 .site-callouts a .fa-home {
         font-size: 200px; }
       #personal1 .site-callouts a .fa-angle-double-right {
-        font-size: 100px; }
+        font-size: 6.25rem; }
       #personal1 .site-callouts a:hover {
         opacity: 0.6; }
   #personal1 .site-footer {
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     background: #000;
     padding: 32px 0; }
     #personal1 .site-footer p {
@@ -414,12 +556,16 @@
     #personal1 .site-footer .site-footer-name {
       font-size: 18px;
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 0; }
     #personal1 .site-footer .footer-address {
       margin: 16px 0; }
+      #personal1 .site-footer .footer-address .office {
+        font-size: 18px;
+        font-weight: bold; }
     #personal1 .site-footer h2 {
       color: #fff;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 100;
       text-transform: uppercase; }
     #personal1 .site-footer .footer-social {
@@ -428,14 +574,34 @@
               align-items: flex-end;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      display: flex; }
       #personal1 .site-footer .footer-social li {
         padding: 0 8px; }
+        #personal1 .site-footer .footer-social li:first-of-type {
+          padding-left: 0; }
+        #personal1 .site-footer .footer-social li a {
+          color: #fff;
+          font-size: 1.125rem;
+          text-decoration: none;
+          border: 1px solid #fff;
+          border-radius: 100%;
+          height: 1.75rem;
+          width: 1.75rem;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          transition: all 300ms ease; }
+          #personal1 .site-footer .footer-social li a:hover {
+            color: #bcbbbb;
+            background: #fff; }
     #personal1 .site-footer form {
-      font-size: 12px;
+      font-size: 0.75rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -447,15 +613,23 @@
       #personal1 .site-footer form input,
       #personal1 .site-footer form textarea {
         font-family: "Open Sans", sans-serif;
+        background-repeat: no-repeat;
+        background-position: right top;
         border: none;
         border-radius: 4px;
-        padding: 12px;
+        padding: 0.75rem;
         -webkit-appearance: none; }
-      #personal1 .site-footer form input[type="text"] {
-        margin-right: 8px; }
       #personal1 .site-footer form input[type="text"], #personal1 .site-footer form input[type="email"] {
+        background-size: contain;
         margin-bottom: 8px;
         width: 49%; }
+        #personal1 .site-footer form input[type="text"]:focus, #personal1 .site-footer form input[type="email"]:focus {
+          background-image: none; }
+      #personal1 .site-footer form input[type="text"] {
+        margin-right: 8px;
+        background-image: url(../img/contact-icon-name.png); }
+      #personal1 .site-footer form input[type="email"] {
+        background-image: url(../img/contact-icon-email.png); }
       #personal1 .site-footer form input[type="submit"] {
         color: #fff;
         font-family: "Source Serif Pro", serif;
@@ -464,14 +638,17 @@
         border: 1px solid #fff;
         border-radius: 16px;
         margin: 8px 0;
-        padding: 10px;
+        padding: 0.625rem;
         -webkit-appearance: none;
         transition: all 300ms ease; }
         #personal1 .site-footer form input[type="submit"]:hover {
           color: #000;
           background: #fff; }
       #personal1 .site-footer form textarea {
+        background-image: url(../img/contact-icon-message.png);
         width: 100%; }
+        #personal1 .site-footer form textarea:focus {
+          background-image: none; }
     #personal1 .site-footer .site-footer-links {
       font-family: "Open Sans", sans-serif;
       padding: 32px 9;
@@ -484,7 +661,7 @@
           -ms-flex-pack: justify;
               justify-content: space-between; }
       #personal1 .site-footer .site-footer-links li {
-        font-size: 12px;
+        font-size: 0.75rem;
         border-bottom: 1px solid #fff;
         margin-right: 8px;
         margin-bottom: 16px;
@@ -500,7 +677,7 @@
           transition: all 300ms ease; }
     #personal1 .site-footer .site-footer-disclaimer {
       font-family: "Open Sans", sans-serif;
-      font-size: 10px; }
+      font-size: 0.625rem; }
     #personal1 .site-footer .site-footer-branding {
       padding: 32px 8px 0;
       -webkit-box-align: center;
@@ -515,16 +692,16 @@
       #personal1 .site-footer .site-footer-branding .site-agent-access-link {
         color: #fff;
         font-family: "Open Sans", sans-serif;
-        font-size: 10px;
+        font-size: 0.625rem;
         text-decoration: none;
         text-transform: uppercase;
         border: 1px solid #fff;
         padding: 16px 32px;
         transition: all 300ms ease; }
         #personal1 .site-footer .site-footer-branding .site-agent-access-link:hover {
-          color: #bcbbbb;
+          color: #000;
           background: #fff; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal1 .site-footer h2 {
         text-align: center; }
       #personal1 .site-footer .site-logo img {

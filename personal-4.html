@@ -8,18 +8,16 @@
   	<script src="https://use.fontawesome.com/44fe09b643.js"></script>
   	
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet">
-  	
-
-  	
-  	<link href="css/personal-2.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
+  	<link href="css/personal-4.css" rel="stylesheet">
   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   	<style>
     	
     	:root {
-      	--main-color: #345b75;
+      	--main-color: #bb481f;
       	--secondary-color: #f78f1e;
       	--tertiary-color: #005aa2;
-      	--hero: url(../img/persona2/agent.jpg);
       	--sub-hero: url(img/team/hero2.jpg);
       	--agent: url(img/team/hero1.jpg);
     	}
@@ -28,13 +26,14 @@
   
   <body>
     
-    <div id="personal2">
+    <div id="personal4">
       <header class="site-header">
         
-        <div class="site-logo-nav site-container">
+        <div class="site-logo-nav-search site-container">
+          
           <div class="site-logo">
             <img src="img/reliance-logo-white.png">
-            <a href="/">Sally Q. Agent</a>
+            <a href="/">James Agent</a>
           </div>
           
           <nav>
@@ -54,87 +53,112 @@
               <li><a href="#">Contact</a></li>
             </ul>
             
-            <a href="#" class="site-header-nav-login"><span>Log in</span><i class="fa fa-user"></i></a>
+            <a href="#" class="site-header-nav-login">Log in</a>
             
             <a href="#" class="site-header-nav-button" id="navBurger"><span class="site-header-nav-burger"></span></a>
 
+
           </nav>
+          
+          <div class="site-header-quick-search">
+            <a id="headerSearch">
+              <span class="closed"><i class="fa fa-search"></i></span>
+              <span class="open"><i class="fa fa-close"></i></span>
+            </a>
+            
+            <form>
+              <input type="text" placeholder="Enter Location or MLS">
+              <input type="submit" value="Search">
+            </form>
+          </div>
         </div>
         
       </header>
       
       <section class="site-home-page-hero">
         
+        <div class="site-home-page-hero-slider">
+          <article style="background-image: url(img/persona4/agent.jpg)";></article>
+          <article style="background-image: url(img/persona3/agent.jpg)";></article>
+          <article style="background-image: url(img/persona2/agent.jpg)";></article>
+          <article style="background-image: url(img/persona1/agent.jpg)";></article>
+        </div>
+        
         <div class="site-home-page-hero-content">
           
           <div class="site-container">
+            <h1>Working together</h1>
+            <h2>Real Estate Broker</h2>
+            <h3>Oregon & SW Washington</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae tincidunt est, a consequat odio. Nam interdum rhoncus quam, quis porta dui rutrum ut.</p>
             
-            <div class="site-home-page-hero-content-container">
-              <h1>Search for your new home</h1>
-              <h2>Real Estate Broker</h2>
-              <h3>Oregon & SW Washington</h3>
-              <div class="site-home-quick-search">
-                <form>
-                  <input type="text" placeholder="Enter Location or MLS">
-                  <input type="submit" value="Search">
-                </form>
-              </div>
-            </div>
+            <ul class="no-bullet">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
             
-            <a id="scrollDown">
-              <i class="fa fa-angle-down"></i>
-            </a>
           </div>
+          
+          
           
         </div>
         
-      </section>
-      
-      <section class="site-home-page-content">
-        <div class="site-container">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ipsum neque. Aliquam sit amet erat sapien. Curabitur id velit ut sem tristique facilisis. Pellentesque scelerisque nunc id eros sagittis, quis tincidunt lorem suscipit. Quisque varius at lacus eget pellentesque. Ut tincidunt posuere convallis. Nunc nec pulvinar tortor, quis aliquet nisl. Vestibulum elementum eu urna eget semper. Aliquam vitae tincidunt est, a consequat odio. Nam interdum rhoncus quam, quis porta dui rutrum ut.</p>
-          
-        </div>
+        <a href="#" id="scrollDown"><i class="fa fa-angle-down"></i></a>
+        
+        
       </section>
       
       <section class="site-callouts">
-        <div class="site-container site-row">
+        <div class="site-row">
           
           <a class="site-column third" href="#">
             <i class="fa fa-home"></i>
             
-            <h2>Home Valuation</h2>
-            <h3>What is my home worth?</h3>
+            <section>
+              <h2>Buying A Home</h2>
+              <h3>Allow us to help with your home purchase.</h3>
+              
+              <span>Learn More <div class="arrow"></div></span>
+            </section>
+
+          </a>
+          
+          <a class="site-column third" href="#">
+            <i class="fa fa-key"></i>
             
-            <i class="fa fa-angle-double-right"></i>
-            
+            <section>
+              <h2>Owning a Home</h2>
+              <h3>Improve the value of your home these simple easy tips.</h3>
+              
+              <span>Learn More <div class="arrow"></div></span>
+            </section>
+
           </a>
           
           <a class="site-column third" href="#">
             <i class="fa fa-home"></i>
             
-            <h2>Buying</h2>
-            <h3>Home buying tips.</h3>
-            
-            <i class="fa fa-angle-double-right"></i>
-          </a>
-          
-          <a class="site-column third" href="#">
-            <i class="fa fa-home"></i>
-            
-            <h2>Selling</h2>
-            <h3>Get the most for your home.</h3>
-            
-            <i class="fa fa-angle-double-right"></i>
+            <section>
+              <h2>Property Watch</h2>
+              <h3>Save searches, save favorites, email updates, flyers, virtual tours and much more!</h3>
+              
+              <span>Learn More <div class="arrow"></div></span>
+            </section>
+
           </a>
           
           
         </div>
       </section>
       
+      
+      
       <section class="site-home-page-testimonial">
         <div class="site-container">
+          
+          <h2>What our clients are saying</h2>
+          
           <div class="site-home-page-testimonial-content">
             <p name="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ipsum neque. Aliquam sit amet erat sapien. Curabitur id velit ut sem tristique facilisis. Pellentesque scelerisque nunc id eros sagittis, quis tincidunt lorem suscipit. Quisque varius at lacus eget pellentesque. Ut tincidunt posuere convallis. Nunc nec pulvinar tortor, quis aliquet nisl. Vestibulum elementum eu urna eget semper. Aliquam vitae tincidunt est, a consequat odio. Nam interdum rhoncus quam, quis porta dui rutrum ut.</p>
             <span>~ The Johnson Family (Seattle, Washington)</span>
@@ -145,72 +169,28 @@
       
       <section class="site-featured-listings">
         
-          <a href="#">
+          <article>
               <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
                 <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
+                <li class="address">123 First Ferry Road</li>
+                <li class="view"><a href="#">View</a></li>
               </ul>
               
-          </a>
+          </article>
           
-          <a href="#">
+          <article>
               <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
+                
                 <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
+                <li class="address">123 First Ferry Road</li>
+                <li class="view"><a href="#">View</a></li>
               </ul>
               
-          </a>
+          </aricle>
           
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-         
           
       </section>
       
-      
-      
-      
-      
-      
-      
-      
-      
-
       
       <footer class="site-footer">
         <div class="site-container">
@@ -219,9 +199,8 @@
             <div class="site-column quarter">
               <h2>Find me</h2>
               
-              <p class="site-footer-name">James W. Agent</p>
-              <p>Real Estate Broker</p>
-              <p>Licensed in OR</p>
+              <p class="site-footer-name">James Agent</p>
+              <p class="site-footer-title">Real Estate Brokers</p>
               
               <ul class="no-bullet footer-address">
                 <li class="office">Office Name</li>
@@ -235,7 +214,8 @@
             </div>
             <div class="site-column quarter">
               <h2>Follow me</h2>
-                              
+              
+                
               <ul class="no-bullet footer-social">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
@@ -247,7 +227,7 @@
               
             </div>
             <div class="site-column half">
-              <h2>Contact me</h2>
+              <h2>Contact Me</h2>
               
               <form>
                 <input type="text" placeholder="Name" class="name">
@@ -278,7 +258,7 @@
           </div>
           
           <div class="site-footer-branding site-container">
-            <a href="www.reliancenetwork.com" target="_blank"><img src="img/team/reliance-logo.png"></a>
+            <a href="www.reliancenetwork.com" target="_blank"><img src="img/reliance-logo-black.png"></a>
             
             <a class="site-agent-access-link" href="#">Agent Access</a>
           </div>
@@ -296,7 +276,8 @@
 			
 		</div>
     
-    <script src="js/persona2/app.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/persona4/app.js"></script>
     
   </body>
   

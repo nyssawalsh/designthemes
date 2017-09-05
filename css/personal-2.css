@@ -17,7 +17,7 @@
     color: var(--main-color); }
   #personal2 .site-container {
     margin: 0 auto;
-    max-width: 1200px; }
+    max-width: 75rem; }
   #personal2 .no-bullet {
     list-style-type: none;
     margin: 0;
@@ -33,7 +33,7 @@
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-row {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; } }
@@ -47,7 +47,7 @@
       width: 33%; }
     #personal2 .site-column.quarter {
       width: 25%; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-column.two-thirds, #personal2 .site-column.half, #personal2 .site-column.third, #personal2 .site-column.quarter {
         width: 100%; } }
   #personal2 .site-header {
@@ -57,41 +57,39 @@
     left: 0;
     right: 0;
     z-index: 1; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-header {
-        height: 40px;
+        background: var(--main-color);
+        height: 2.5rem;
         position: relative; }
         #personal2 .site-header .site-logo-nav, #personal2 .site-header .site-logo, #personal2 .site-header .site-logo img {
           height: 100%; } }
   #personal2 .site-logo {
-    width: 25%; }
+    width: 25%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #personal2 .site-logo img {
+      padding-right: 8px; }
     #personal2 .site-logo a {
       color: #fff;
       font-family: "Dancing Script", cursive;
-      font-size: 48px;
+      font-size: 32px;
       line-height: 0.8;
       text-align: center;
       text-decoration: none;
       display: block; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-logo {
-        width: auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
+        width: auto; }
         #personal2 .site-logo a {
-          color: #000;
-          font-size: 20px;
+          font-size: 1.25rem;
           text-shadow: none; } }
   #personal2 .site-logo-nav {
-    height: 100px;
+    height: 6.25rem;
     padding: 0 8px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -102,42 +100,22 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-logo-nav {
         position: relative; } }
-    #personal2 .site-logo-nav nav, #personal2 .site-logo-nav nav ul, #personal2 .site-logo-nav nav ul li, #personal2 .site-logo-nav nav ul li a {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    #personal2 .site-logo-nav nav ul li {
-      font-size: 14px;
-      border-right: 1px solid #fff;
-      padding: 0 16px; }
-      #personal2 .site-logo-nav nav ul li:last-of-type {
-        border-right: none; }
+    #personal2 .site-logo-nav nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
       #personal2 .site-logo-nav nav ul li a {
-        color: #fff;
+        font-family: "Open Sans", sans-serif;
         text-decoration: none;
         text-transform: uppercase; }
-    @media only screen and (max-width: 768px) {
-      #personal2 .site-logo-nav nav ul {
-        display: none;
-        width: 100%;
-        position: absolute;
-        top: 40px;
-        right: 0; }
-        #personal2 .site-logo-nav nav ul li {
-          background: #fff;
-          border-bottom: 1px solid #4f4f4f; }
-          #personal2 .site-logo-nav nav ul li:last-of-type {
-            border-bottom: none; } }
     #personal2 .site-logo-nav nav .site-header-nav-login {
       color: #fff;
-      font-size: 14px;
+      font-size: 0.875rem;
       font-weight: bold;
+      font-family: "Open Sans", sans-serif;
       text-decoration: none;
       text-transform: uppercase;
       border: 1px solid #fff;
@@ -145,15 +123,23 @@
       transition: all 300ms ease; }
       #personal2 .site-logo-nav nav .site-header-nav-login:hover {
         background: var(--main-color); }
-      @media only screen and (max-width: 768px) {
+      @media only screen and (min-width: 48.0625em) {
+        #personal2 .site-logo-nav nav .site-header-nav-login i {
+          display: none; } }
+      @media only screen and (max-width: 48em) {
         #personal2 .site-logo-nav nav .site-header-nav-login {
-          color: #000; } }
+          border: none;
+          padding: 4px; }
+          #personal2 .site-logo-nav nav .site-header-nav-login span {
+            display: none; }
+          #personal2 .site-logo-nav nav .site-header-nav-login i {
+            font-size: 1.5rem; } }
     #personal2 .site-logo-nav nav .site-header-nav-button {
       text-decoration: none;
       padding: 0 8px;
       cursor: pointer;
       display: none; }
-      @media only screen and (max-width: 769px) {
+      @media only screen and (max-width: 48em) {
         #personal2 .site-logo-nav nav .site-header-nav-button {
           -webkit-box-align: center;
               -ms-flex-align: center;
@@ -173,7 +159,7 @@
           display: block;
           width: 28px;
           height: 3px;
-          background-color: #4f4f4f;
+          background-color: #fff;
           transition-property: background-color, -webkit-transform;
           transition-property: background-color, transform;
           transition-duration: 0.3s; }
@@ -192,16 +178,142 @@
       #personal2 .site-logo-nav nav .site-header-nav-button.is-active .site-header-nav-burger::after {
         -webkit-transform: translateY(-8px) rotate(-45deg);
                 transform: translateY(-8px) rotate(-45deg); }
+    @media only screen and (min-width: 48.0625em) {
+      #personal2 .site-logo-nav nav {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #personal2 .site-logo-nav nav > ul {
+          margin-right: 16px;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          #personal2 .site-logo-nav nav > ul > li {
+            border-right: 1px solid #fff;
+            padding: 0 16px;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            #personal2 .site-logo-nav nav > ul > li:last-of-type {
+              border-right: none;
+              padding-right: 0; }
+            #personal2 .site-logo-nav nav > ul > li > a {
+              color: #fff;
+              position: relative;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              transition: all 300ms ease; }
+            #personal2 .site-logo-nav nav > ul > li:not(.has-dropdown):hover a {
+              opacity: 0.7; }
+        #personal2 .site-logo-nav nav ul li {
+          font-size: 0.875rem; }
+        #personal2 .site-logo-nav nav ul .has-dropdown {
+          padding-right: 32px;
+          position: relative; }
+          #personal2 .site-logo-nav nav ul .has-dropdown:after {
+            color: #fff;
+            content: '\f107';
+            font-family: FontAwesome;
+            position: absolute;
+            right: 16px;
+            transition: all 300ms ease; }
+          #personal2 .site-logo-nav nav ul .has-dropdown:hover .dropdown {
+            display: block; }
+          #personal2 .site-logo-nav nav ul .has-dropdown:hover:after {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+        #personal2 .site-logo-nav nav ul .dropdown {
+          list-style: none;
+          margin: 0;
+          padding-left: 0;
+          position: absolute;
+          top: 1.0625rem;
+          display: none; }
+          #personal2 .site-logo-nav nav ul .dropdown li {
+            background: #fff;
+            padding: 0;
+            transition: all 300ms ease; }
+            #personal2 .site-logo-nav nav ul .dropdown li a {
+              color: #4f4f4f;
+              padding: 8px;
+              display: block; }
+            #personal2 .site-logo-nav nav ul .dropdown li:hover {
+              background: var(--main-color); }
+              #personal2 .site-logo-nav nav ul .dropdown li:hover a {
+                color: #fff; } }
+    @media only screen and (max-width: 48em) {
+      #personal2 .site-logo-nav nav {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        #personal2 .site-logo-nav nav > ul {
+          display: none;
+          width: 100%;
+          position: absolute;
+          top: 2.5rem;
+          right: 0; }
+          #personal2 .site-logo-nav nav > ul li {
+            background: #fff;
+            border-bottom: 1px solid #4f4f4f; }
+            #personal2 .site-logo-nav nav > ul li:last-of-type {
+              border-bottom: none; }
+            #personal2 .site-logo-nav nav > ul li a {
+              color: #4f4f4f;
+              text-decoration: none;
+              padding: 8px;
+              display: block; }
+        #personal2 .site-logo-nav nav ul .has-dropdown {
+          position: relative;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          #personal2 .site-logo-nav nav ul .has-dropdown a {
+            width: 100%; }
+          #personal2 .site-logo-nav nav ul .has-dropdown:after {
+            content: '\f107';
+            font-family: FontAwesome;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            transition: all 300ms ease; }
+          #personal2 .site-logo-nav nav ul .has-dropdown.open:after {
+            -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg); }
+        #personal2 .site-logo-nav nav ul .dropdown {
+          position: inherit;
+          top: 0;
+          display: none; }
+          #personal2 .site-logo-nav nav ul .dropdown li {
+            background: var(--main-color);
+            border-color: #fff; }
+            #personal2 .site-logo-nav nav ul .dropdown li a {
+              color: #fff; } }
   #personal2 .site-home-page-hero {
     background-image: var(--hero);
-    background-position: bottom;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-home-page-hero {
-        height: calc(100vh - 40px); } }
+        background-position: right;
+        height: calc(100vh - 2.5rem); } }
   #personal2 .site-home-page-hero-content {
     width: 100%;
     position: absolute;
@@ -211,20 +323,21 @@
       margin: 0; }
     #personal2 .site-home-page-hero-content h1 {
       font-family: "Dancing Script", cursive;
-      font-size: 100px;
-      font-weight: normal; }
+      font-size: 6.25rem;
+      font-weight: normal;
+      line-height: 0.8; }
     #personal2 .site-home-page-hero-content h2, #personal2 .site-home-page-hero-content h3 {
       font-weight: 100;
       line-height: 1.1; }
     #personal2 .site-home-page-hero-content h2 {
-      font-size: 50px; }
+      font-size: 3.125rem; }
     #personal2 .site-home-page-hero-content h3 {
       font-size: 32px; }
     #personal2 .site-home-page-hero-content .site-home-quick-search {
       padding: 16px 0; }
       #personal2 .site-home-page-hero-content .site-home-quick-search form {
         margin: 0;
-        width: 40%;
+        width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -235,16 +348,18 @@
           text-transform: uppercase; }
           #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="text"] {
             font-family: "Open Sans", sans-serif;
-            font-size: 12px;
+            font-size: 0.75rem;
             border-top: 1px solid #bcbbbb;
             border-right: none;
             border-bottom: 1px solid #bcbbbb;
             border-left: 1px solid #bcbbbb;
             padding: 16px;
-            width: 80%; }
+            -webkit-box-flex: 100%;
+                -ms-flex: 100%;
+                    flex: 100%; }
           #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
             color: #4f4f4f;
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: bold;
             text-align: right;
             background: #fff;
@@ -253,15 +368,22 @@
             border-bottom: 1px solid #bcbbbb;
             border-left: none;
             padding: 0 16px;
-            width: 20%; }
-    @media only screen and (max-width: 768px) {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 1 auto;
+                    flex: 1 1 auto;
+            cursor: pointer;
+            transition: all 300ms ease; }
+            #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="submit"]:hover {
+              color: #fff;
+              background: var(--main-color); }
+    @media only screen and (max-width: 48em) {
       #personal2 .site-home-page-hero-content {
         padding: 8px;
         width: auto;
         top: auto;
         bottom: 0; }
         #personal2 .site-home-page-hero-content h1 {
-          font-size: 40px;
+          font-size: 2.5rem;
           line-height: 1; }
         #personal2 .site-home-page-hero-content h2, #personal2 .site-home-page-hero-content h3 {
           font-size: 32px; }
@@ -273,15 +395,32 @@
               width: 75%; }
             #personal2 .site-home-page-hero-content .site-home-quick-search form input[type="submit"] {
               width: 25%; } }
+  #personal2 .site-home-page-hero-content-container {
+    max-width: 50%; }
+  #personal2 #scrollDown {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    transition: all 300ms ease; }
+    #personal2 #scrollDown:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+    @media only screen and (max-width: 48em) {
+      #personal2 #scrollDown {
+        display: none; } }
   #personal2 .site-home-page-content {
     color: #bcbbbb;
     padding: 32px 8px; }
     #personal2 .site-home-page-content p {
-      font-size: 28px;
+      font-size: 1.75rem;
       line-height: 1.8; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-home-page-content {
-        padding: 8px; } }
+        padding: 8px; }
+        #personal2 .site-home-page-content p {
+          font-size: 16px; } }
   #personal2 .site-callouts {
     background: #bcbbbb;
     padding: 64px 0; }
@@ -306,17 +445,17 @@
         font-weight: normal;
         margin: 0; }
       #personal2 .site-callouts a h2 {
-        font-size: 28px;
+        font-size: 1.75rem;
         text-transform: uppercase;
         padding-top: 8px; }
       #personal2 .site-callouts a h3 {
-        font-size: 18px; }
+        font-size: 1.125rem; }
       #personal2 .site-callouts a .fa-home {
-        font-size: 200px;
+        font-size: 12.5rem;
         background: var(--main-color);
         border-radius: 100%;
-        height: 250px;
-        width: 250px;
+        height: 15.625rem;
+        width: 15.625rem;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -325,21 +464,22 @@
         display: flex;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        transition: all 300ms ease; }
       #personal2 .site-callouts a .fa-angle-double-right {
         font-size: 32px;
         padding: 8px; }
-      #personal2 .site-callouts a:hover {
-        opacity: 0.6; }
+      #personal2 .site-callouts a:hover .fa-home {
+        background: #000; }
   #personal2 .site-home-page-testimonial {
     color: var(--main-color);
-    padding: 100px 32px; }
+    padding: 6.25rem 32px; }
   #personal2 .site-home-page-testimonial-content {
     position: relative; }
     #personal2 .site-home-page-testimonial-content:before, #personal2 .site-home-page-testimonial-content:after {
       color: #bcbbbb;
       content: "''";
-      font-size: 80px;
+      font-size: 5rem;
       position: absolute; }
     #personal2 .site-home-page-testimonial-content:before {
       top: -14px;
@@ -348,20 +488,20 @@
       bottom: -9px;
       right: -25px; }
     #personal2 .site-home-page-testimonial-content p {
-      font-size: 24px;
+      font-size: 1.5rem;
       font-style: italic;
       line-height: 1.8;
       margin: 0; }
     #personal2 .site-home-page-testimonial-content span {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-style: italic;
       font-weight: 100;
       text-align: right;
-      padding-right: 48px;
+      padding-right: 32px;
       display: block; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-home-page-testimonial-content p, #personal2 .site-home-page-testimonial-content span {
-        font-size: 14px; } }
+        font-size: 0.875rem; } }
   #personal2 .site-featured-listings {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -377,7 +517,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 300px;
+      height: 18.75rem;
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end;
@@ -388,15 +528,14 @@
           -ms-flex: 1 1 33%;
               flex: 1 1 33%;
       transition: all 300ms ease; }
-      #personal2 .site-featured-listings a:hover {
-        opacity: 0.7; }
       #personal2 .site-featured-listings a ul {
-        padding: 16px; }
+        padding: 16px;
+        transition: all 300ms ease; }
         #personal2 .site-featured-listings a ul li.address {
           border-bottom: 1px solid #fff;
           padding-bottom: 8px; }
         #personal2 .site-featured-listings a ul li.price {
-          font-size: 28px;
+          font-size: 1.75rem;
           font-weight: 400;
           padding: 8px 0; }
         #personal2 .site-featured-listings a ul li.details span {
@@ -407,22 +546,28 @@
           #personal2 .site-featured-listings a ul li.details span:last-of-type {
             border-right: none;
             padding-right: 0; }
+      #personal2 .site-featured-listings a:hover ul {
+        background: rgba(0, 0, 0, 0.7); }
   #personal2 .site-footer {
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     background: var(--main-color);
     padding: 32px 0; }
     #personal2 .site-footer p {
       margin: 0; }
     #personal2 .site-footer .site-footer-name {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: bold;
       text-transform: uppercase; }
     #personal2 .site-footer .footer-address {
       margin: 16px 0; }
+      #personal2 .site-footer .footer-address .office {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase; }
     #personal2 .site-footer h2 {
       color: #fff;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 100;
       text-transform: uppercase; }
     #personal2 .site-footer .footer-social {
@@ -431,14 +576,34 @@
               align-items: flex-end;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+      display: flex; }
       #personal2 .site-footer .footer-social li {
         padding: 0 8px; }
+        #personal2 .site-footer .footer-social li:first-of-type {
+          padding-left: 0; }
+        #personal2 .site-footer .footer-social li a {
+          color: #fff;
+          font-size: 1.125rem;
+          text-decoration: none;
+          border: 1px solid #fff;
+          border-radius: 100%;
+          height: 1.75rem;
+          width: 1.75rem;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          transition: all 300ms ease; }
+          #personal2 .site-footer .footer-social li a:hover {
+            color: var(--main-color);
+            background: #fff; }
     #personal2 .site-footer form {
-      font-size: 12px;
+      font-size: 0.75rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -450,31 +615,42 @@
       #personal2 .site-footer form input,
       #personal2 .site-footer form textarea {
         font-family: "Open Sans", sans-serif;
+        background-repeat: no-repeat;
+        background-position: right top;
         border: none;
         border-radius: 4px;
-        padding: 12px;
+        padding: 0.75rem;
         -webkit-appearance: none; }
-      #personal2 .site-footer form input[type="text"] {
-        margin-right: 8px; }
       #personal2 .site-footer form input[type="text"], #personal2 .site-footer form input[type="email"] {
+        background-size: contain;
         margin-bottom: 8px;
         width: 49%; }
+        #personal2 .site-footer form input[type="text"]:focus, #personal2 .site-footer form input[type="email"]:focus {
+          background-image: none; }
+      #personal2 .site-footer form input[type="text"] {
+        margin-right: 8px;
+        background-image: url(../img/contact-icon-name.png); }
+      #personal2 .site-footer form input[type="email"] {
+        background-image: url(../img/contact-icon-email.png); }
       #personal2 .site-footer form input[type="submit"] {
         color: #fff;
         font-family: "Source Serif Pro", serif;
         text-transform: uppercase;
-        background-color: transparent;
+        background: rgba(255, 255, 255, 0.4);
         border: 1px solid #fff;
-        border-radius: 0;
+        border-radius: 16px;
         margin: 8px 0;
-        padding: 10px;
+        padding: 0.625rem;
         -webkit-appearance: none;
         transition: all 300ms ease; }
         #personal2 .site-footer form input[type="submit"]:hover {
-          color: var(--main-color);
+          color: #000;
           background: #fff; }
       #personal2 .site-footer form textarea {
+        background-image: url(../img/contact-icon-message.png);
         width: 100%; }
+        #personal2 .site-footer form textarea:focus {
+          background-image: none; }
     #personal2 .site-footer .site-footer-links {
       font-family: "Open Sans", sans-serif;
       padding: 32px 9;
@@ -487,7 +663,7 @@
           -ms-flex-pack: justify;
               justify-content: space-between; }
       #personal2 .site-footer .site-footer-links li {
-        font-size: 12px;
+        font-size: 0.75rem;
         border-bottom: 1px solid #fff;
         margin-right: 8px;
         margin-bottom: 16px;
@@ -503,7 +679,7 @@
           transition: all 300ms ease; }
     #personal2 .site-footer .site-footer-disclaimer {
       font-family: "Open Sans", sans-serif;
-      font-size: 10px; }
+      font-size: 0.625rem; }
     #personal2 .site-footer .site-footer-branding {
       padding: 32px 8px 0;
       -webkit-box-align: center;
@@ -518,7 +694,7 @@
       #personal2 .site-footer .site-footer-branding .site-agent-access-link {
         color: #fff;
         font-family: "Open Sans", sans-serif;
-        font-size: 10px;
+        font-size: 0.625rem;
         text-decoration: none;
         text-transform: uppercase;
         border: 1px solid #fff;
@@ -527,7 +703,7 @@
         #personal2 .site-footer .site-footer-branding .site-agent-access-link:hover {
           color: var(--main-color);
           background: #fff; }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 48em) {
       #personal2 .site-footer h2 {
         text-align: center; }
       #personal2 .site-footer .site-logo img {

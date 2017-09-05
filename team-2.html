@@ -8,33 +8,53 @@
   	<script src="https://use.fontawesome.com/44fe09b643.js"></script>
   	
   	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" rel="stylesheet">
-  	
-
-  	
-  	<link href="css/personal-2.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  	<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" rel="stylesheet">
+  	<link href="css/team-2.css" rel="stylesheet">
   	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   	<style>
     	
     	:root {
-      	--main-color: #345b75;
+      	--main-color: #8aaebc;
       	--secondary-color: #f78f1e;
       	--tertiary-color: #005aa2;
-      	--hero: url(../img/persona2/agent.jpg);
-      	--sub-hero: url(img/team/hero2.jpg);
-      	--agent: url(img/team/hero1.jpg);
+      	--hero: url(../img/team2/team.jpg);
+      	--texture: url(../img/team1/bg-texture.jpg);
     	}
   	</style>
   	</head>
   
   <body>
     
-    <div id="personal2">
+    <div id="team1">
       <header class="site-header">
+        
+        <div class="site-header-social-contact">
+          
+          <div class="site-container">
+            
+            <ul class="no-bullet site-header-social">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            
+            <ul class="no-bullet site-header-contact">
+              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+              <li><i class="fa fa-phone"></i> 123.456.7890</li>
+              <li><i class="fa fa-phone"></i> Office - 123.456.7890</li>
+            </ul>
+                        
+          </div>
+          
+        </div>
+        
         
         <div class="site-logo-nav site-container">
           <div class="site-logo">
             <img src="img/reliance-logo-white.png">
-            <a href="/">Sally Q. Agent</a>
+            <a href="/">The Team</a>
           </div>
           
           <nav>
@@ -54,152 +74,158 @@
               <li><a href="#">Contact</a></li>
             </ul>
             
-            <a href="#" class="site-header-nav-login"><span>Log in</span><i class="fa fa-user"></i></a>
+            <a href="#" class="site-header-nav-login">Log in</a>
             
             <a href="#" class="site-header-nav-button" id="navBurger"><span class="site-header-nav-burger"></span></a>
 
+
           </nav>
+          
+          
         </div>
         
       </header>
       
       <section class="site-home-page-hero">
         
-        <div class="site-home-page-hero-content">
+        <div class="site-home-page-hero-overlay">
           
-          <div class="site-container">
+          <div class="site-home-page-hero-content-search site-container">
+
+                
+            <h1>Let's work together</h1>
+            <h2>Real Estate Brokers</h2>
+            <h3>Oregon & SW Washington</h3>
             
-            <div class="site-home-page-hero-content-container">
-              <h1>Search for your new home</h1>
-              <h2>Real Estate Broker</h2>
-              <h3>Oregon & SW Washington</h3>
-              <div class="site-home-quick-search">
-                <form>
-                  <input type="text" placeholder="Enter Location or MLS">
-                  <input type="submit" value="Search">
-                </form>
-              </div>
+            <div class="site-home-page-hero-search">
+              <form>
+                <input type="text" placeholder="Enter Location or MLS">
+                <input type="submit" value="Search">
+              </form>
             </div>
+
             
-            <a id="scrollDown">
-              <i class="fa fa-angle-down"></i>
-            </a>
           </div>
           
+          <a id="scrollDown"><i class="fa fa-angle-down"></i></a>
+
         </div>
         
       </section>
       
-      <section class="site-home-page-content">
+      <section class="site-content">
         <div class="site-container">
-          
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ipsum neque. Aliquam sit amet erat sapien. Curabitur id velit ut sem tristique facilisis. Pellentesque scelerisque nunc id eros sagittis, quis tincidunt lorem suscipit. Quisque varius at lacus eget pellentesque. Ut tincidunt posuere convallis. Nunc nec pulvinar tortor, quis aliquet nisl. Vestibulum elementum eu urna eget semper. Aliquam vitae tincidunt est, a consequat odio. Nam interdum rhoncus quam, quis porta dui rutrum ut.</p>
-          
-        </div>
+        </div>        
+        
       </section>
       
       <section class="site-callouts">
-        <div class="site-container site-row">
-          
-          <a class="site-column third" href="#">
+        
+        <div class="site-container">
+          <a href="#">
             <i class="fa fa-home"></i>
             
             <h2>Home Valuation</h2>
-            <h3>What is my home worth?</h3>
             
-            <i class="fa fa-angle-double-right"></i>
-            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </a>
-          
-          <a class="site-column third" href="#">
+          <a href="#">
             <i class="fa fa-home"></i>
             
             <h2>Buying</h2>
-            <h3>Home buying tips.</h3>
             
-            <i class="fa fa-angle-double-right"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </a>
-          
-          <a class="site-column third" href="#">
+          <a href="#">
             <i class="fa fa-home"></i>
             
-            <h2>Selling</h2>
-            <h3>Get the most for your home.</h3>
+            <h2>Home Valuation</h2>
             
-            <i class="fa fa-angle-double-right"></i>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </a>
-          
-          
         </div>
+
       </section>
       
-      <section class="site-home-page-testimonial">
+      
+      <section class="site-home-testimonial">
         <div class="site-container">
-          <div class="site-home-page-testimonial-content">
-            <p name="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ipsum neque. Aliquam sit amet erat sapien. Curabitur id velit ut sem tristique facilisis. Pellentesque scelerisque nunc id eros sagittis, quis tincidunt lorem suscipit. Quisque varius at lacus eget pellentesque. Ut tincidunt posuere convallis. Nunc nec pulvinar tortor, quis aliquet nisl. Vestibulum elementum eu urna eget semper. Aliquam vitae tincidunt est, a consequat odio. Nam interdum rhoncus quam, quis porta dui rutrum ut.</p>
-            <span>~ The Johnson Family (Seattle, Washington)</span>
-          </div>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at ipsum neque. Aliquam sit amet erat sapien.</p>
+          <span>~ The Johnson Family (Beaverton, OR)</span>
           
         </div>
       </section>
       
-      <section class="site-featured-listings">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+            
+      <section class="site-featured-listings site-container">
         
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-          <a href="#">
-              <ul class="no-bullet site-featured-listing-info">
-                <li class="address">123 First Ferry Road</li>
-                <li class="price">$28,585,400</li>
-                <li class="details"><span>Bedrooms: 9</span><span>Bathrooms: 12</span>
-              </ul>
-              
-          </a>
-          
-         
-          
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+        <a href="#" style="background-image: url(img/persona5/featured-listing.jpg)">            
+          <ul class="no-bullet">
+            
+            <li class="address"> 123 North Lane Beaverton Oregon 12345</li>
+            <li class="price">$3,899,000</li>
+            <li class="details">Bedrooms: 4 | Bathrooms: 3</li>
+            
+          </ul>
+        </a>
+
       </section>
       
       
@@ -217,11 +243,10 @@
           
           <div class="site-row">
             <div class="site-column quarter">
-              <h2>Find me</h2>
+              <h2>Find us</h2>
               
-              <p class="site-footer-name">James W. Agent</p>
-              <p>Real Estate Broker</p>
-              <p>Licensed in OR</p>
+              <p class="site-footer-name">The Team</p>
+              <p class="site-footer-title">Real Estate Broker</p>
               
               <ul class="no-bullet footer-address">
                 <li class="office">Office Name</li>
@@ -234,9 +259,9 @@
               
             </div>
             <div class="site-column quarter">
-              <h2>Follow me</h2>
-                              
-              <ul class="no-bullet footer-social">
+              <h2>Follow us</h2>
+              
+               <ul class="no-bullet footer-social">
                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -244,10 +269,9 @@
                 
               </ul>
               
-              
             </div>
             <div class="site-column half">
-              <h2>Contact me</h2>
+              <h2>Contact us</h2>
               
               <form>
                 <input type="text" placeholder="Name" class="name">
@@ -278,7 +302,7 @@
           </div>
           
           <div class="site-footer-branding site-container">
-            <a href="www.reliancenetwork.com" target="_blank"><img src="img/team/reliance-logo.png"></a>
+            <a href="www.reliancenetwork.com" target="_blank"><img src="img/reliance-logo-white.png"></a>
             
             <a class="site-agent-access-link" href="#">Agent Access</a>
           </div>
@@ -296,7 +320,8 @@
 			
 		</div>
     
-    <script src="js/persona2/app.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/team2/app.js"></script>
     
   </body>
   
